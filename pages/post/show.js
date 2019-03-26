@@ -29,7 +29,17 @@ Page({
     main: main,
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    name:'',
+    number:'',
+    institute:''
+  },
+  changeData: function (name, number, institute) {
+    this.setData({
+      name: name,
+      number:number,
+      institute: institute
+    })
   },
 
   //事件处理函数

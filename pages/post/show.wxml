@@ -1,15 +1,17 @@
 <!--pages/post/show.wxml-->
-<view class='my_head'>
+<view id='button'>
   <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录 </button>
   <block wx:else>
-    <navigator class='head'>
+    <view class='head'>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-    </navigator>
-    <view style='flex-direction:column' class='head_info'>
-      <view style='border-bottom:1px solid #0099cc'>姓名</view>
-      <view style='border-bottom:1px solid #0099cc'>学号</view>
-      <view>学院</view>
     </view>
+    <navigator url="show2">
+    <view style='flex-direction:column' class='head_info'>
+      <view style='border-bottom:1px solid #0099cc'>姓名:{{name}}</view>
+      <view style='border-bottom:1px solid #0099cc'>学号:{{number}}</view>
+      <view>学院:{{institute}}</view>
+    </view>
+    </navigator>
   </block>
 </view>
 <view class='divLine_row'></view>

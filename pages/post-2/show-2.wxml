@@ -1,2 +1,18 @@
-<!--pages/post-2/show-2.wxml-->
-<text>pages/post-2/show-2.wxml</text>
+<!--index.wxml-->
+ <!-- 内容信息 -->
+  <view class='content'>
+
+    <block wx:for="{{systemList}}">
+      <!-- 列表 -->
+      <view class='list'>
+        <view class='list_subject'>{{item.subject}}</view>
+        <view class='list_title'>{{item.title}}</view>
+        <view class="list_info {{item.hidden?'hide':'show'}}" >{{item.contentH}}</view>
+        <image src="{{item.image}}" class='down'  data-id="{{item.id}}" bindtap='moreInfo'></image>
+        <view class='time'>开始时间：{{item.start_time}}</view>
+        <view class='time'>截止时间：{{item.deadline}}</view>
+      </view>
+      <!-- 列表 -->
+      </block>
+
+    </view>

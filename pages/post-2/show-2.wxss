@@ -1,1 +1,70 @@
-/* pages/post-2/show-2.wxss */
+
+.content {
+  width: 92%;
+  margin: 0 auto;
+}
+.content   .list{
+width: 100%;
+height: auto;
+border-bottom:1px  solid #dddddd;
+}
+.content   .list  .list_title{
+  margin: 40rpx  0 20rpx 0;
+  font-size: 40rpx;
+  color: #282828;
+}
+.list_subject{
+  margin: 40rpx  0 20rpx 0;
+  font-size: 40rpx;
+  color: #282828;
+}
+.content   .list  .list_info ,
+.content   .list{
+  font-size: 35rpx;
+  line-height: 35rpx;
+  color: #989898;
+}
+.time{
+  font-size: 30rpx;
+  line-height: 20rpx;
+  color: red;
+}
+.content   .list  .list_info{
+  height: 70rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}
+.content   .list  .more_info{
+  height: auto !important;
+  overflow: auto !important;
+  text-overflow: normal !important;
+   display: block;
+  -webkit-line-clamp: none;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}
+.content   .list  .hide{
+ display: -webkit-box;
+}
+.content   .list  .show{
+  height: auto !important;
+  overflow: auto !important;
+  text-overflow: normal !important;
+   display: block;
+  -webkit-line-clamp: none;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}
+.content   .list .time{
+  margin-bottom: 30rpx;
+}
+.down{
+  display: block;
+  width: 36rpx;
+  height: 15rpx;
+  margin: 40rpx auto;
+}
