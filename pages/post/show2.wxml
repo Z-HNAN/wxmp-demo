@@ -1,30 +1,50 @@
 <form bindsubmit="formSubmit" bindreset="formReset">
-  <view>
-    <view>姓名：</view>
-    <input name="name" type="text" placeholder="请输入你的姓名"/>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">姓名</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input name="name" class="weui-input" placeholder="请输入你的姓名" />
+    </view>
   </view>
-
-  <view>
-    <view>学校：</view>
-    <input name="school" type="text" placeholder="请输入你的学校"/>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">学校</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input name="school" class="weui-input" placeholder="请输入你的学校" />
+    </view>
   </view>
-
-  <view>
-    <view>学院：</view>
-    <input name="institute" type="text" placeholder="请输入你的学校"/>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">学院</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input name="institute" class="weui-input" placeholder="请输入你的学院" />
+    </view>
   </view>
-
-  <view>
-    <view>学号：</view>
-    <input name="number" type="text" placeholder="请输入你的学号" />
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">班级</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input name="class" class="weui-input" placeholder="请输入你的班级" />
+    </view>
   </view>
-
-  <view>
-    <view>班级：</view>
-    <input name="class" type="text" placeholder="请输入你的班级" />
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">学号</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input name="number" class="weui-input" placeholder="请输入你的学号" />
+    </view>
   </view>
-  <view>
-    <button form-type="submit">确认</button>
-    <button form-type="reset">重置</button>
+  
+  <view class="weui-btn-area">
+      <button class="weui-btn" type="warn" form-type="reset">重置</button>
   </view>
+  <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" form-type="submit">确定</button>
+  </view>
+  
 </form>
