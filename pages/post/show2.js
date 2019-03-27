@@ -14,14 +14,30 @@ Page({
     })
   },
   formReset() {
-    console.log('form发生了reset事件')
+    wx.navigateTo({
+      url: 'show',
+    })
   },
 
   /**
    * 页面的初始数据
    */
   data: {
+    name:'',
+    school:'',
+    institute:'',
+    group:'',
+    number:''
     
+  },
+  changeData: function (name, school, institute,group,number) {
+    this.setData({
+      name: name,
+      school: school,
+      institute: institute,
+      group:group,
+      number:number
+    })
   },
 
   /**

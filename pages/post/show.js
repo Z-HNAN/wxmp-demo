@@ -32,7 +32,9 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     name:'',
     number:'',
-    institute:''
+    institute:'',
+    hiddenmodalput: false,
+    phoneNum: '',
   },
   changeData: function (name, number, institute) {
     this.setData({
@@ -40,6 +42,36 @@ Page({
       number:number,
       institute: institute
     })
+  },
+  cancelM: function (e) {
+    this.setData({
+      hiddenmodalput: true,
+      name:'',
+      number:'',
+      institute:''
+    })
+  },
+
+  confirmM: function (e) {
+    this.setData({
+      hiddenmodalput: true
+    })
+  },
+
+  iName: function (e) {
+    this.setData({
+      name: e.detail.value
+    })
+  },
+  iNum: function (e) {
+    this.setData({
+      number: e.detail.value
+  })
+  },
+  institude: function (e) {
+    this.setData({
+      institute: e.detail.value
+  })
   },
 
   //事件处理函数

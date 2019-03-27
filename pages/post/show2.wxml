@@ -4,7 +4,7 @@
       <view class="weui-label">姓名</view>
     </view>
     <view class="weui-cell__bd">
-      <input name="name" class="weui-input" placeholder="请输入你的姓名" />
+      <input name="name" class="weui-input" placeholder="请输入你的姓名" value='{{name}}' />
     </view>
   </view>
   <view class="weui-cell weui-cell_input">
@@ -12,7 +12,7 @@
       <view class="weui-label">学校</view>
     </view>
     <view class="weui-cell__bd">
-      <input name="school" class="weui-input" placeholder="请输入你的学校" />
+      <input name="school" class="weui-input" placeholder="请输入你的学校" value='{{school}}' />
     </view>
   </view>
   <view class="weui-cell weui-cell_input">
@@ -20,7 +20,7 @@
       <view class="weui-label">学院</view>
     </view>
     <view class="weui-cell__bd">
-      <input name="institute" class="weui-input" placeholder="请输入你的学院" />
+      <input name="institute" class="weui-input" placeholder="请输入你的学院" value='{{institute}}' />
     </view>
   </view>
   <view class="weui-cell weui-cell_input">
@@ -28,7 +28,7 @@
       <view class="weui-label">班级</view>
     </view>
     <view class="weui-cell__bd">
-      <input name="class" class="weui-input" placeholder="请输入你的班级" />
+      <input name="group" class="weui-input" type='number' placeholder="请输入你的班级" value='{{group}}' />
     </view>
   </view>
   <view class="weui-cell weui-cell_input">
@@ -36,7 +36,7 @@
       <view class="weui-label">学号</view>
     </view>
     <view class="weui-cell__bd">
-      <input name="number" class="weui-input" placeholder="请输入你的学号" />
+      <input name="number" class="weui-input" type='number' placeholder="请输入你的学号" value='{{number}}' />
     </view>
   </view>
   
