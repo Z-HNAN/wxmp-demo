@@ -6,7 +6,7 @@ let main = [
     name: '校园'
   },
   {
-    src: '../../icon/class.png',
+    src: '../../icon/group.png',
     name: '课程'
   },
   {

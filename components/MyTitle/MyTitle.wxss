@@ -1,0 +1,23 @@
+/* components/MyTitle/MyTitle.wxss */
+.search{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 70rpx;
+  margin-top: 5%;
+  margin-left: 5%;
+  border: 1rpx solid #1698DC;
+  border-radius: 20rpx;
+}
+.search input{
+  font-size: 30rpx;
+  font-family: 'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 30rpx;
+}
+.search image{
+  width: 40rpx;
+  height: 40rpx;
+  padding-right: 20rpx;
+}

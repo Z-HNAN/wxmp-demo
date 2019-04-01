@@ -5,7 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    classList:[{
+      id:0,
+      img:'../../icon/计组.jpg',
+      name:'计算机组成原理（乙）',
+      type:'课程'
+    },{
+      id: 1,
+      img: '../../icon/board.png',
+      name: '清明放假通知',
+      type: '公告'
+    }],
+    RecentList: [{
+      id: 0,
+      img: '../../icon/论文.png',
+      name: '科技论文写作',
+      type: '课程'
+    }, {
+      id: 1,
+      img: '../../icon/board.png',
+      name: '清明放假通知',
+      type: '公告'
+    }]
   },
 
   /**

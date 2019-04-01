@@ -1,0 +1,6 @@
+<view class="my_title">
+  <view class='search'>
+    <input type='text' placeholder='请输入你所需要的课程' confirm-type='search' value='{{inputValue}}' bindinput='inputBind' bindconfirm='query'></input>
+    <image class='' src='../../icon/search.png' ></image>
+  </view>
+</view>

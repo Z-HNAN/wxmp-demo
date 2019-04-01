@@ -1,0 +1,29 @@
+<view class="main">
+  <MyTitle></MyTitle>
+  <view class='head'>
+    <navigator hover-class='none'>
+      <image src='../../icon/class.png'></image><view>课程</view>
+    </navigator>
+    <navigator hover-class='none'>
+      <image src='../../icon/activity.png'></image><view>公告</view>
+    </navigator>
+  </view>
+  <view class='main'>
+    <view class='common'>常用</view>
+    <block wx:for="{{classList}}">
+      <navigator hover-class='none' class='content'>
+        <image src='{{item.img}}'></image>
+        <view style='font-size:30rpx'>{{item.name}}</view>
+        <view class='itemType'>{{item.type}}</view>
+      </navigator>
+    </block>
+    <view class='common'>最近使用</view>
+    <block wx:for="{{RecentList}}">
+      <navigator hover-class='none' class='content'>
+        <image src='{{item.img}}'></image>
+        <view style='font-size:30rpx'>{{item.name}}</view>
+        <view class='itemType'>{{item.type}}</view>
+      </navigator>
+    </block>
+  </view>
+</view>
