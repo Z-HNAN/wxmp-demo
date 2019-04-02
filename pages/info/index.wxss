@@ -22,14 +22,14 @@
 }
 
 .head{
-  border-right: 1px solid #0099cc;
+  border-right: 1rpx solid #0099cc;
 }
 
 .head image{
-  width: 90px;
-  height: 90px;
-  border: 1px solid gray;
-  margin:20px 20px 0px 35px;
+  width: 180rpx;
+  height: 180rpx;
+  border: 1rpx solid gray;
+  margin:40rpx 60rpx 0rpx 80rpx;
 }
 
 .my_head{
@@ -37,22 +37,22 @@
 }
 
 .head_info > view{
-  margin-left: 20px;
-  margin-top: 10px;
-  height: 30px;
+  margin-left: 70rpx;
+  margin-top: 35rpx;
+  height: 60rpx;
   color: #55743e;
-  width: 120px;
+  width: 240rpx;
 }
 
 .main{
-  margin-top:50px;
-  height: 250px
+  margin-top:120rpx;
+  height: 520rpx
 }
 
 .main navigator{
   height: 30px;
-  margin: 15px 0px 10px 30px ;
-  padding-top: 10px;
+  margin: 40rpx 0rpx 25rpx 70rpx ;
+  padding-top: 25rpx;
   border-bottom: 1px solid #00A1D6;
   width:80%;
   color: #55743e;
@@ -61,8 +61,8 @@
 
 
 .main navigator image{
-  padding-right: 5px;
-  width: 20px;
-  height: 20px;
+  padding-right: 10rpx;
+  width: 50rpx;
+  height: 45rpx;
   float: right;
 }

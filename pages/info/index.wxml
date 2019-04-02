@@ -10,7 +10,7 @@
     <view class='head'>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
     </view>
-    <navigator url="show2">
+    <navigator url="edit">
     <view style='flex-direction:column' class='head_info'>
       <view style='border-bottom:1px solid #0099cc'>姓名:{{name}}</view>
       <view style='border-bottom:1px solid #0099cc'>学号:{{number}}</view>

@@ -1,11 +1,10 @@
 {
   "pages":[
-    "pages/post-3/show-3",
-    "pages/post-2/show-2",
-    "pages/post/show",
-    "pages/post/show2",
-    "pages/logs/logs",
-    "pages/index/index"
+    "pages/home/index",
+    "pages/info/index",
+    "pages/info/edit",
+    "pages/post/index",
+    "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -16,19 +15,19 @@
   "tabBar": {
     "borderStyle":"white",
     "list": [{
-      "pagePath": "pages/post-2/show-2",
+      "pagePath": "pages/home/index",
       "text": "list",
       "iconPath": "icon/home.png",
       "selectedIconPath": "icon/home_active.png"
     },
     {
-      "pagePath": "pages/post-3/show-3",
+      "pagePath": "pages/post/index",
       "text": "select",
       "iconPath": "icon/search.png",
       "selectedIconPath": "icon/search_active.png"
     },
     {
-      "pagePath": "pages/post/show",
+      "pagePath": "pages/info/index",
       "text": "info",
       "iconPath": "icon/list.png",
       "selectedIconPath": "icon/list_active.png"
