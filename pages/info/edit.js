@@ -14,8 +14,13 @@ Page({
     })
   },
   formReset() {
-    wx.navigateTo({
-      url: 'show',
+    wx.clearStorage();
+    let pages = getCurrentPages();
+    let prevPage = pages[pages.length - 2];
+    prevPage.setData({
+      name: '',
+      number: '',
+      institute: '',
     })
   },
 
@@ -44,7 +49,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this
+    var name = wx.getStorageSync('name');
+    var num = wx.getStorageSync('num');
+    var institute = wx.getStorageSync('institute');
+    if(name){
+      that.setData({
+        name: name
+      });
+    }
+    if (num) {
+      that.setData({
+        number: num
+      });
+    }
+    if (institute) {
+      that.setData({
+        institute: institute
+      });
+    }
   },
 
   /**

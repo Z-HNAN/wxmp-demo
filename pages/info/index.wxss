@@ -41,7 +41,7 @@
   margin-top: 35rpx;
   height: 60rpx;
   color: #55743e;
-  width: 240rpx;
+  width: 270rpx;
 }
 
 .main{

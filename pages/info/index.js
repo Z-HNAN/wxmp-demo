@@ -33,8 +33,8 @@ Page({
     name:'',
     number:'',
     institute:'',
-    hiddenmodalput: false,
     phoneNum: '',
+    hiddenmodalput: false
   },
   changeData: function (name, number, institute) {
     this.setData({
@@ -59,19 +59,34 @@ Page({
   },
 
   iName: function (e) {
+    var iname = e.detail.value
     this.setData({
-      name: e.detail.value
+      name: iname
+    }),
+    wx.setStorage({
+      key: 'name',
+      data: iname
     })
   },
   iNum: function (e) {
+    var inum = e.detail.value
     this.setData({
-      number: e.detail.value
-  })
+      number: inum
+  }),
+    wx.setStorage({
+      key: 'num',
+      data: inum
+    })
   },
-  institude: function (e) {
+  institute: function (e) {
+    var institute = e.detail.value
     this.setData({
-      institute: e.detail.value
-  })
+      institute: institute
+  }),
+    wx.setStorage({
+      key: 'institute',
+      data: institute
+    })
   },
 
   //事件处理函数
@@ -111,7 +126,29 @@ Page({
         }
       })
     }
+    
+    var that = this
+    var name = wx.getStorageSync('name');
+    var num = wx.getStorageSync('num');
+    var institute = wx.getStorageSync('institute');
+    if (name) {
+      that.setData({
+        hiddenmodalput: true,
+        name: name
+      });
+    }
+    if (num) {
+      that.setData({
+        number: num
+      });
+    }
+    if (institute) {
+      that.setData({
+        institute: institute
+      });
+    }
   },
+
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -125,7 +162,11 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    var name = wx.getStorageSync('name');
+    console.log(name)
+    if (name) {
+      hiddenmodalput: true
+    }
   },
 
   /**

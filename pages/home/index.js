@@ -29,6 +29,16 @@ Page({
       deadline: '',
       image: '../../icon/down.png'
     },
+    {
+      id: 2,
+      subject: '大学生与法',
+      hidden: true,
+      title: '期中个人作业',
+      contentH: '搜集生活中的法律案例并加以分析，制作成PPT或word。',
+      start_time: '2019-03-15 15:32',
+      deadline: '',
+      image: '../../icon/down.png'
+    },
     ]
   },
 
