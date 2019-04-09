@@ -1,18 +1,55 @@
-<!--index.wxml-->
- <!-- 内容信息 -->
-  <view class='content'>
-
-    <block wx:for="{{systemList}}">
+<view>
+  <view class='top'>
+    <image src='../../icon/manage.png' bindtap='switch_Layout'></image>
+    <image src='../../icon/search2.png' style='padding-left:55%'></image>
+    <image src='../../icon/order.png'></image>
+  </view>
+  <view class='content' hidden='{{list_hide}}'>
+    <block wx:for="{{systemList}}" >
       <!-- 列表 -->
       <view class='list'>
-        <view class='list_subject'>{{item.subject}}</view>
-        <view class='list_title'>{{item.title}}</view>
-        <view class="list_info {{item.hidden?'hide':'show'}}" >{{item.contentH}}</view>
-        <image src="{{item.image}}" class='down'  data-id="{{item.id}}" bindtap='moreInfo'></image>
-        <view class='time'>开始时间：{{item.start_time}}</view>
-        <view class='time'>截止时间：{{item.deadline}}</view>
+        <view style='display:flex'>
+          <checkbox class='list_subject'>{{item.subject}}</checkbox>
+          <image src="{{item.image}}" class='down line_down'  data-id="{{item.id}}" bindtap='moreInfo'></image>
+        </view>
+        <view hidden='{{item.hidden}}'>
+          <view class='list_title'>{{item.title}}</view>
+          <view>{{item.contentH}}</view>
+          <view class='time'>开始时间：{{item.start_time}}</view>
+          <view class='time'>截止时间：{{item.deadline}}</view>
+        </view>
       </view>
       <!-- 列表 -->
+    </block>
+  </view>
+  <view class='cell_content' hidden='{{!list_hide}}'>
+    <view class='body-left'>
+      <block wx:for="{{systemList}}" wx:key='id' class='cell'>
+        <!-- 列表 -->
+        <view class='list'>
+          <checkbox class='list_subject'>{{item.subject}}</checkbox>
+          <view class='list_title'>{{item.title}}</view>
+          <view class="list_info {{item.hidden?'hide':'show'}}" >{{item.contentH}}</view>
+          <image src="{{item.image}}" class='down'  data-id="{{item.id}}" bindtap='moreInfo'></image>
+          <view class='time'>开始时间：{{item.start_time}}</view>
+          <view class='time'>截止时间：{{item.deadline}}</view>
+        </view>
+        <!-- 列表 -->
       </block>
-
     </view>
+    <view class='body-right'>
+      <block wx:for="{{systemList_right}}" wx:key='idright' class='cell' >
+        <!-- 列表 -->
+        <view class='list'>
+          <checkbox class='list_subject'>{{item.subject}}</checkbox>
+          <view class='list_title'>{{item.title}}</view>
+          <view class="list_info {{item.hidden?'hide':'show'}}" >{{item.contentH}}</view>
+          <image src="{{item.image}}" class='down'  data-id="{{item.id}}" bindtap='moreInfo_right'></image>
+          <view class='time'>开始时间：{{item.start_time}}</view>
+          <view class='time'>截止时间：{{item.deadline}}</view>
+        </view>
+        <!-- 列表 -->
+      </block>
+    </view>
+  </view>
+</view>
